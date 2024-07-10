@@ -29,7 +29,7 @@ include('includes/header.php');
                     ?>
                     <div class="card">
                         <div class="card-header">
-                            <h4>Login Form </h4>
+                            <h4>Login Form</h4>
                         </div>
                         <div class="card-body">
                             <form action="functions/authcode.php" method="POST">
