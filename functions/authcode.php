@@ -48,13 +48,14 @@ if(isset($_POST['register_btn'])){
         $username = $userdata['name'];
         $useremail = $userdata['email'];
         $role_as = $userdata['role_as'];
-
         $_SESSION['auth_user'] = [
             'name' => $username,
             'email' => $useremail
         ];
 
         $_SESSION['role_as'] = $role_as ;
+
+        print_r($role_as);
 
         if($role_as == 1){
             redirect('../admin/index.php',"welcome to Dashboard");
